@@ -1,0 +1,8 @@
+.rdrDefinedRangesWrapper {
+    .rdrStaticRanges{
+        display: none;
+    }
+    .rdrInputRanges{
+        display: none;
+    }
+  }
