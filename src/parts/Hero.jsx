@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import img from '../assets/img/Hero.png'
 import Button from '../elements/Button';
 import IconTravel from '../assets/img/ic_traveler 2.png'
