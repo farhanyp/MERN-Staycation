@@ -14,30 +14,25 @@ const Header = () => {
         </a>
         <div className="font-medium text-primary">
           <ul className="flex justify-between">
-            <li className="pl-7 sm:hidden xl:block">
+            <li className="pl-7">
               <a href="/" className="hover:text-secondary hover:underline">
                 Home
               </a>
             </li>
-            <li className="pl-7 sm:hidden xl:block">
+            <li className="pl-7">
               <a href="/" className="hover:text-secondary hover:underline">
                 Browse by
               </a>
             </li>
-            <li className="pl-7 sm:hidden xl:block">
+            <li className="pl-7">
               <a href="/" className="hover:text-secondary hover:underline">
                 Stories
               </a>
             </li>
-            <li className="pl-7 sm:hidden xl:block">
+            <li className="pl-7">
               <a href="/" className="hover:text-secondary hover:underline">
                 Agents
               </a>
-            </li>
-            <li className="pl-7 sm:block xl:hidden">
-              <div>
-                Humberger
-              </div>
             </li>
           </ul>
         </div>
