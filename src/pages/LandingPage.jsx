@@ -7,23 +7,28 @@ import Testimonials from '../parts/Testimonials';
 import Footer from '../parts/Footer';
 import {fetchDataLandingPage} from '../utils/LandingPage';
 import Loading from '../elements/Loading ';
+import datas from '../data/landingPage.json'
 
 const LandingPage = () => { 
     const mostPickedSection = useRef()
     const [data, SetData] = useState(null)
 
     useEffect(() => {
-      const fetchDataAsync = async () =>{
-        try{
-          const response = await fetchDataLandingPage()
-          SetData(response)
-        }catch(error){
-          console.log(error)
-        }
-      }
+      // const fetchDataAsync = async () =>{
+      //   try{
+      //     const response = await fetchDataLandingPage()
+      //     SetData(response)
+      //   }catch(error){
+        //     console.log(error)
+        //   }
+        // }
+        
+        // fetchDataAsync()
+        
+        setTimeout(()=>{
+          SetData(datas)
+        },3000)
 
-      fetchDataAsync()
-      console.log(data)
       }, []);
 
     return (
@@ -32,10 +37,10 @@ const LandingPage = () => {
           data ? 
           <div>
           <Header />
-          {/* <Hero data={data.hero} mostPickedSection={mostPickedSection}/>     */}
-          {/* <MostPicked mostPickedSection={mostPickedSection} data={data.mostpicked}/> */}
-          {/* <Categories data={data.categories}/> */}
-          {/* <Testimonials data={data.testimonial}/> */}
+          <Hero data={data.hero} mostPickedSection={mostPickedSection}/>    
+          <MostPicked mostPickedSection={mostPickedSection} data={data.mostpicked}/>
+          <Categories data={data.categories}/>
+          <Testimonials data={data.testimonial}/>
           <Footer/>
           </div>
           :

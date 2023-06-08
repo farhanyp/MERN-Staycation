@@ -2,9 +2,9 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { useNavigate } from 'react-router-dom';
 
-const Categories = ({data}) => {
+const Categories = (props) => {
     const navigate = useNavigate()
-    return data.map((Categories, index1)=>{
+    return props.data.map((Categories, index1)=>{
         return (
         <Fade bottom delay={500 * index1} key={index1}>
         <div className='pt-16' >
