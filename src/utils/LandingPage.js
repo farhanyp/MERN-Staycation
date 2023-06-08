@@ -13,6 +13,13 @@ export const toMostPicked = (value) => {
   });
 };
 
-export const callApiLandingPage = () => {
-  axios.get('http://localhost:3001/api/v1/member/landing-page').then((res) => console.log(res))
-}
+export const fetchDataLandingPage = async () => {
+    try {
+      const response = await axios.get('https://mern-staycation-server.vercel.app/api/v1/member/landing-page');
+      console.log(response.data)
+      return response.data
+    } catch (error) {
+      console.error(error);
+    }
+  };
+

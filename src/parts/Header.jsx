@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from 'react-reveal/Fade';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Fade bottom cascade>
     <header className="border-slate-100 border-b-[1px] border-gray py-4 text-center">

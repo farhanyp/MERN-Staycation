@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import img from '../assets/img/Hero.png'
 import Button from '../elements/Button';
@@ -10,6 +10,7 @@ import { toMostPicked } from '../utils/LandingPage';
 import Fade from 'react-reveal/Fade';
 
 const Hero = (props) => {
+
     return (
         <Fade bottom cascade>
         <section className='pt-[63px]'>
@@ -22,15 +23,15 @@ const Hero = (props) => {
                     <div className='flex pt-16'>
                         <div >
                             <img src={IconTravel} alt="Travel" />
-                            <p className='font-medium text-primary text-base pt-[10px]'>{numberFormat(props.data.travelers)} <span className='text-gray'>Travelers </span></p>
+                            <p className='font-medium text-primary text-base pt-[10px]'>{props.data.Travelers} <span className='text-gray'>Travelers </span></p>
                         </div>
                         <div className='pl-[50px]'>
                             <img src={IconTreasure} alt="Travel" />
-                            <p className='font-medium text-primary text-base pt-[10px]'>{numberFormat(props.data.treasures)} <span className='text-gray'>Treasure </span></p>
+                            <p className='font-medium text-primary text-base pt-[10px]'>{numberFormat(props.data.Treasure)} <span className='text-gray'>Treasure </span></p>
                         </div>
                         <div className='pl-[50px]'>
                             <img src={IconCities} alt="Travel" />
-                            <p className='font-medium text-primary text-base pt-[10px]'>{numberFormat(props.data.cities)} <span className='text-gray'>Cities </span></p>
+                            <p className='font-medium text-primary text-base pt-[10px]'>{numberFormat(props.data.City)} <span className='text-gray'>Cities </span></p>
                         </div>
                     </div>
                 </div>
