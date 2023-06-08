@@ -32,8 +32,8 @@ const LandingPage = () => {
           data ? 
           <div>
           <Header />
-          <Hero data={data.hero} mostPickedSection={mostPickedSection}/>    
-          <MostPicked mostPickedSection={mostPickedSection} data={data.mostpicked}/>
+          {/* <Hero data={data.hero} mostPickedSection={mostPickedSection}/>     */}
+          {/* <MostPicked mostPickedSection={mostPickedSection} data={data.mostpicked}/> */}
           {/* <Categories data={data.categories}/> */}
           {/* <Testimonials data={data.testimonial}/> */}
           <Footer/>
