@@ -29,7 +29,7 @@ const Hero = (props) => {
                                 <div className='flex pt-16'>
                                     <div >
                                         <img src={IconTravel} alt="Travel" />
-                                        <p className='font-medium text-primary text-base pt-[10px]'>{props.data.Travelers} <span className='text-gray'>Travelers </span></p>
+                                        <p className='font-medium text-primary text-base pt-[10px]'>{numberFormat(props.data.Travelers)} <span className='text-gray'>Travelers </span></p>
                                     </div>
                                     <div className='pl-[50px]'>
                                         <img src={IconTreasure} alt="Travel" />
