@@ -39,7 +39,7 @@ const Testimonials = (props) => {
                 </section>
             ) : (
                 <section className='pt-16'>
-                    <div className='px-6 w-full flex flex-col'>
+                    <div className='px-6 w-full flex flex-col justify-center items-center'>
                         <div className='relative mr-[60px]'>
                         <Fade left cascade>
                             <div className='flex justify-center'>
