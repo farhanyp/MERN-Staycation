@@ -11,7 +11,7 @@ const Testimonials = (props) => {
         <>
         {
             isDesktop ? (
-                <section className='pt-16'>
+                <section className='pt-16' id='testimonials'>
                     <div className='container w-full flex'>
                         <div className='relative mr-[60px]'>
                         <Fade left cascade>
@@ -38,7 +38,7 @@ const Testimonials = (props) => {
                     </div>
                 </section>
             ) : (
-                <section className='pt-16'>
+                <section className='pt-16' id='testimonials'>
                     <div className='px-6 w-full flex flex-col justify-center items-center'>
                         <div className='relative mr-[60px]'>
                         <Fade left cascade>
