@@ -56,7 +56,7 @@ const MostPicked = (props) => {
                                                 <Fade bottom delay={500 * index} key={index}>
                                                 <div className={`${index === 0 ? "row-span-2" : "col-span-1"} w-full relative`} 
                                                 onClick={()=> navigate(`/detail-page/${item._id}`)}>
-                                                    <div className='overflow-hidden rounded-xl flex justify-center'>
+                                                    <div className='overflow-hidden rounded-xl flex justify-end'>
                                                         <span className='w-[180px] h-10 flex items-center justify-center absolute z-30 bg-price text-white text-base font-medium rounded-tr-xl rounded-bl-xl'>$ {item.price} per night</span>
                                                         <div className='scale-110 hover:scale-100 transition-all ease-in delay-75 cursor-pointer pt-1' >
                                                             <div className=' h-fit bg-gradient-to-t from-black flex'>
