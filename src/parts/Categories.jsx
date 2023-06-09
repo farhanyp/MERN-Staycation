@@ -63,7 +63,7 @@ const Categories = (props) => {
                                                 <div className='w-[267px] h-fit cursor-pointer' onClick={()=> navigate(`/detail-page/${item._id}`)}>
                                                     {
                                                         (item.isPopular) ? 
-                                                        <div className='flex justify-end'>
+                                                        <div className='flex justify-center'>
                                                             <h4 className='w-[180px] h-10 flex items-center justify-center absolute z-30 bg-price text-white text-base font-normal rounded-tr-xl rounded-bl-xl'>Popular Choice</h4>
                                                         </div> : ""
                                                     }

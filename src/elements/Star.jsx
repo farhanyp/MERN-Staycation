@@ -1,6 +1,8 @@
 import React from 'react';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const Star = ({value, width, height, spacing}) => {
+    const isDesktop = useMediaQuery("(min-width: 1444px)");
     const desimal =  Number(value) % 1
     const starPlaceholder = []
     const star = []
@@ -28,21 +30,22 @@ const Star = ({value, width, height, spacing}) => {
     }
 
     return (
-        <div className='inline-flex relative w-full h-[35px]'>
-            {starPlaceholder}
-            {star}
-            {/* <div className='star placeholder w-[45px] h-[45px] absolute left-[0px] bg-gray'></div>
-            <div className='star placeholder w-[45px] h-[45px] absolute left-[45px] bg-gray'></div>
-            <div className='star placeholder w-[45px] h-[45px] absolute left-[90px] bg-gray'></div>
-            <div className='star placeholder w-[45px] h-[45px] absolute left-[135px] bg-gray'></div>
-            <div className='star placeholder w-[45px] h-[45px] absolute left-[180px] bg-gray'></div> */}
-
-            {/* <div className='star w-[45px] h-[45px] absolute left-[0px] bg-primary'></div>
-            <div className='star w-[45px] h-[45px] absolute left-[45px] bg-primary'></div>
-            <div className='star w-[45px] h-[45px] absolute left-[90px] bg-primary'></div>
-            <div className='star w-[45px] h-[45px] absolute left-[135px] bg-primary'></div>
-            <div className='star w-[24.3px] h-[45px] absolute left-[180px] bg-primary'></div> */}
-        </div>
+        <>
+        {
+            isDesktop ? (
+                <div className='inline-flex relative w-full h-[35px]'>
+                    {starPlaceholder}
+                    {star}
+                </div>
+            ) : (
+                <div className='inline-flex relative ml-[28%] w-full h-[35px]'>
+                    {starPlaceholder}
+                    {star}
+                </div>
+            )
+        }
+        </>
+        
         
     );
 }
