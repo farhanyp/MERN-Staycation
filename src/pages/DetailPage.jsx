@@ -27,7 +27,6 @@ const DetailPage = () => {
             <ThingsTodo data={datas.activities}/>
             <DetailTestimonials data={datas.testimonial}/>
             <Footer/>
-            {/* <InputNumber/> */}
         </div>
     );
 }

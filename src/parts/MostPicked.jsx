@@ -6,6 +6,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 const MostPicked = (props) => {
     const navigate = useNavigate()
     const isDesktop = useMediaQuery("(min-width: 1444px)");
+    
     return (
         <>
             {
