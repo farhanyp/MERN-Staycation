@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -10,7 +11,9 @@
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
     "dom-loaded": "^3.0.0",
+    "framer-motion": "^10.12.16",
     "react": "^18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-date-range": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^5.3.4",

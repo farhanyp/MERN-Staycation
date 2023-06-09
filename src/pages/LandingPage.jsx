@@ -25,9 +25,9 @@ const LandingPage = () => {
         
         // fetchDataAsync()
         
-        setTimeout(()=>{
-          SetData(datas)
-        },3000)
+        // setTimeout(()=>{
+        // },3000)
+        SetData(datas)
 
       }, []);
 
@@ -37,7 +37,7 @@ const LandingPage = () => {
           data ? 
           <div>
           <Header />
-          <Hero data={data.hero} mostPickedSection={mostPickedSection}/>    
+          <Hero data={data.hero} mostPickedSection={mostPickedSection}/>
           <MostPicked mostPickedSection={mostPickedSection} data={data.mostpicked}/>
           <Categories data={data.categories}/>
           <Testimonials data={data.testimonial}/>

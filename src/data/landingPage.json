@@ -7,7 +7,7 @@
   "mostpicked": [
     {
       "_id": "asd1293uasdads1",
-      "name": "Blue Ocean",
+      "title": "Blue Ocean",
       "type": "Hotel",
       "imageUrl": "/images/Blue-Ocean.png",
       "country": "South Korea",
@@ -18,7 +18,7 @@
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Wood Beach",
+      "title": "Wood Beach",
       "type": "Hotel",
       "imageUrl": "/images/Wood-Beach.png",
       "country": "Indonesia",
@@ -29,7 +29,7 @@
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Mini Hotels",
+      "title": "Mini Hotels",
       "type": "Hotel",
       "imageUrl": "/images/Mini-Hotels.png",
       "country": "South Korea",
@@ -40,7 +40,7 @@
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Mountain Fresh",
+      "title": "Mountain Fresh",
       "type": "House",
       "imageUrl": "/images/Mountain-Fresh.png",
       "country": "South Korea",
@@ -51,7 +51,7 @@
     },
     {
       "_id": "asd1293uasdads1",
-      "name": "Sky Ocean",
+      "title": "Sky Ocean",
       "type": "Apartment",
       "imageUrl": "/images/Sky Ocean.png",
       "country": "South Korea",

@@ -1,43 +1,53 @@
-import React from "react";
+import React, { useState }  from "react";
 import Fade from 'react-reveal/Fade';
+import Nav from "../elements/Nav";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Header = (props) => {
+  const [selectedPage, setSelectedPage] = useState("home");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
     <Fade bottom cascade>
-    <header className="border-slate-100 border-b-[1px] border-gray py-4 text-center">
-      <div className="container flex items-center justify-between">
-        <a
-          href="/"
-          className="text-[26px] font-medium leading-[39px] text-secondary"
-        >
-          Stay<span className="text-primary">cation.</span>
-        </a>
-        <div className="font-medium text-primary">
-          <ul className="flex justify-between">
-            <li className="pl-7">
-              <a href="/" className="hover:text-secondary hover:underline">
-                Home
+      {
+        isDesktop ? 
+        (
+          <header className="border-slate-100 border-b-[1px] border-gray py-4 text-center">
+            <div className="container flex items-center justify-between">
+              <a
+                href="/"
+                className="text-[26px] font-medium leading-[39px] text-secondary"
+              >
+                Stay<span className="text-primary">cation.</span>
               </a>
-            </li>
-            <li className="pl-7">
-              <a href="/" className="hover:text-secondary hover:underline">
-                Browse by
+              <div className="font-medium text-primary">
+                <Nav
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+                />
+              </div>
+            </div>
+          </header>
+        ) : (
+          <header className="border-slate-100 border-b-[1px] border-gray py-4 text-center">
+            <div className="px-6 flex items-center justify-between">
+              <a
+                href="/"
+                className="text-[26px] font-medium leading-[39px] text-secondary"
+              >
+                Stay<span className="text-primary">cation.</span>
               </a>
-            </li>
-            <li className="pl-7">
-              <a href="/" className="hover:text-secondary hover:underline">
-                Stories
-              </a>
-            </li>
-            <li className="pl-7">
-              <a href="/" className="hover:text-secondary hover:underline">
-                Agents
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+              <div className="font-medium text-primary">
+                <Nav
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+                />
+              </div>
+            </div>
+          </header>
+        )
+      }
+    
     </Fade>
   );
 };
