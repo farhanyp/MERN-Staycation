@@ -1,6 +1,6 @@
 {
   "hero": {
-    "Travelers": 1000,
+    "Travelers": 1492,
     "Treasure": 882,
     "City": 1492
   },
@@ -20,6 +20,7 @@
       "_id": "asd1293uasdads1",
       "title": "Wood Beach",
       "type": "Hotel",
+   
       "imageUrl": "/images/Wood-Beach.png",
       "country": "Indonesia",
       "city": "Bogor",

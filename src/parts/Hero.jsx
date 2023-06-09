@@ -63,7 +63,7 @@ const Hero = (props) => {
                                 <div className='flex pt-8 justify-evenly items-center gap-10'>
                                     <div className='flex flex-col w-9 justify-center items-center'>
                                         <img src={IconTravelSM} alt="Travel" className='w-7'/>
-                                        <p className='font-medium text-primary text-sm pt-[10px]'>{props.data.Travelers} </p>
+                                        <p className='font-medium text-primary text-sm pt-[10px]'>{numberFormat(props.data.Travelers)} </p>
                                         <p className='text-gray'>Travelers</p>
                                     </div>
                                     <div className='flex flex-col w-9 justify-center items-center'>
